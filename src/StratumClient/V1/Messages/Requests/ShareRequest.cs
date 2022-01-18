@@ -5,9 +5,10 @@ namespace StratumClient.V1.Messages.Requests
 {
     public class ShareRequest : JsonRpcRequest
     {
+        public const string METHOD = "mining.submit";
         public ShareRequest(string workerName, string jobId, string extraOnce2, string ntime, string nonce)
         {
-            this.Method = "mining.submit";
+            this.Method = METHOD;
             this.Params = new JArray();
             Params.Add(workerName);
             Params.Add(jobId);

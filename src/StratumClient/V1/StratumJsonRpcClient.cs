@@ -24,8 +24,6 @@ namespace StratumClient.V1
 
         private Socket _socket;
 
-        public event DOnDisconnect OnDisconnect;
-
         public event DOnAuthorizeResponse OnAuthorizeResponse;
 
         public event DOnSubscribeResponse OnSubscribeResponse;

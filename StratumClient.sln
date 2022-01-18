@@ -9,9 +9,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5749D6A1-D6C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7DF8D280-485C-4930-85F3-3B5B2A74999A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StratumClient.Extensions.Logging.Serilog", "src\StratumClient.Extensions.Logging.Serilog\StratumClient.Extensions.Logging.Serilog.csproj", "{C1D4CA22-984D-48F2-8A73-9E7EF346BA57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StratumClient.Extensions.Logging.Serilog", "src\StratumClient.Extensions.Logging.Serilog\StratumClient.Extensions.Logging.Serilog.csproj", "{C1D4CA22-984D-48F2-8A73-9E7EF346BA57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StratumClientConsole", "tests\StratumClientConsole\StratumClientConsole.csproj", "{811C6969-0857-46AA-86A4-4B3A72115F0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StratumClientConsole", "tests\StratumClientConsole\StratumClientConsole.csproj", "{811C6969-0857-46AA-86A4-4B3A72115F0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AD47E8BE-B631-4535-99B3-416FB46F728F}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -8,9 +8,6 @@ namespace StratumClient.V1
     public partial class StratumV1JsonRpcClient
     {
         private byte[] _recieveBuffer = new byte[1024 * 4];
-
-        private AsyncCallback _EndRecieveCallback;
-
         private void _BeginRecieve()
         {
             _logger.EnteringMethod();

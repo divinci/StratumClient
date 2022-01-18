@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using StratumClient.Extensions;
 using StratumClient.V1.Messages;
 using StratumClient.V1.Messages.Requests;
 using StratumClient.V1.Messages.Responses;
@@ -134,8 +135,13 @@ namespace StratumClient.V1
                         OnSubscribeResponse?.Invoke(SubscribeResponse.BuildFrom(jsonMessageString), value as SubscribeRequest);
                         break;
 
+                    case ShareRequest.METHOD:
+                        OnShareResponse?.Invoke(ShareResponse.BuildFrom(jsonMessageString), value as ShareRequest);
+                        break;
+
                     default:
-                        throw new NotImplementedException();
+                        _logger.LogAndThrow(new NotImplementedException($"JsonRpcResponse not implemented: {jsonMessageString}"));
+                        break;
                 }
             }
             else
