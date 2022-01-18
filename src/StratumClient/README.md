@@ -1,4 +1,4 @@
-# Stratum Client
+﻿# Stratum Client
 
 ### A stratum client for mining pool participation.
 
