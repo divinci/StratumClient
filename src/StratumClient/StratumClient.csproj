@@ -6,7 +6,7 @@
 
 	<PropertyGroup>
 		<PackageId>StratumClient</PackageId>
-		<Version>0.0.1-preview06</Version>
+		<Version>0.0.49-preview</Version>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>Stratum;Stratum client;Mining pool;Bitcoin</PackageTags>
 		<Description>Stratum client for pooled crypto mining.
