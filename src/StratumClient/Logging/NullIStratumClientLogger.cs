@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace StratumClient
+namespace Stratum.Logging
 {
-    internal class NullLogger : ILogger
+    internal class NullIStratumClientLogger : IStratumClientLogger
     {
         public void Debug(string message)
         {

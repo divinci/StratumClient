@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace StratumClient.V1.Messages.Requests
+namespace Stratum.V1.Messages.Requests
 {
     public class SubscribeRequest : JsonRpcRequest
     {

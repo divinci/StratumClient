@@ -1,11 +1,11 @@
-﻿using StratumClient.Extensions;
+﻿using Stratum.Extensions;
 using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace StratumClient.V1
+namespace Stratum.V1
 {
     public partial class StratumClient
     {

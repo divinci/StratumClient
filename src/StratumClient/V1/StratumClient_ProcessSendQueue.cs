@@ -1,12 +1,12 @@
 ﻿using Newtonsoft.Json;
-using StratumClient.Extensions;
-using StratumClient.V1.Messages;
+using Stratum.Extensions;
+using Stratum.V1.Messages;
 using System;
 using System.Collections.Concurrent;
 using System.Text;
 using System.Threading;
 
-namespace StratumClient.V1
+namespace Stratum.V1
 {
     public partial class StratumClient
     {

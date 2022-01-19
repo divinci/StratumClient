@@ -1,12 +1,14 @@
-﻿using Serilog.Events;
+﻿using Serilog;
+using Serilog.Events;
+using Stratum.Extensions.Logging.Serilog;
 
-namespace StratumClient.Extensions.Logging
+namespace Stratum.V1
 {
     public static class StratumClientExtensions
     {
-        public static V1.StratumClient UseSerilog(
-            this V1.StratumClient client,
-            Serilog.ILogger logger,
+        public static StratumClient UseSerilog(
+            this StratumClient client,
+            ILogger logger,
             LogEventLevel jsonMessageReceivedLogLevel = LogEventLevel.Verbose,
             LogEventLevel jsonMessageSentLogLevel = LogEventLevel.Verbose)
         {

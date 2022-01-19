@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace StratumClient.V1.Messages.Responses
+namespace Stratum.V1.Messages.Responses
 {
     public class ShareResponse : JsonRpcResponse
     {

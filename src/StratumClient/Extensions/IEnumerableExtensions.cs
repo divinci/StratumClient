@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace StratumClient.Extensions
+namespace Stratum.Extensions
 {
     internal static class IEnumerableExtensions
     {

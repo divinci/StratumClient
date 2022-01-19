@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace StratumClient.V1.Messages
+namespace Stratum.V1.Messages
 {
     public class JsonRpcBase
     {

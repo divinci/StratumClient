@@ -1,9 +1,9 @@
-﻿using StratumClient.Extensions;
+﻿using Stratum.Extensions;
 using System;
 using System.Collections.Concurrent;
 using System.Net.Sockets;
 
-namespace StratumClient.V1
+namespace Stratum.V1
 {
     public partial class StratumClient
     {

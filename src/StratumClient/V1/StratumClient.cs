@@ -1,8 +1,9 @@
-﻿using StratumClient.V1.Messages.Requests;
-using StratumClient.V1.Messages.Responses;
+﻿using Stratum.Logging;
+using Stratum.V1.Messages.Requests;
+using Stratum.V1.Messages.Responses;
 using System.Net.Sockets;
 
-namespace StratumClient.V1
+namespace Stratum.V1
 {
     public delegate void DOnConnect(StratumClient jsonRpcClient);
 
@@ -20,7 +21,7 @@ namespace StratumClient.V1
 
     public partial class StratumClient
     {
-        private ILogger _logger;
+        private IStratumClientLogger _logger;
 
         private Socket _socket;
 
@@ -36,14 +37,10 @@ namespace StratumClient.V1
 
         public StratumClient()
         {
+            _logger = new NullIStratumClientLogger();
         }
 
-        public void SetLogger(ILogger logger)
-        {
-            _logger = logger;
-        }
-
-        public StratumClient(ILogger logger)
+        internal void SetLogger(IStratumClientLogger logger)
         {
             _logger = logger;
         }

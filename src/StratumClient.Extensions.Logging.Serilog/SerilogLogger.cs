@@ -1,20 +1,22 @@
-﻿using Serilog.Events;
+﻿using Serilog;
+using Serilog.Events;
+using Stratum.Logging;
 using System;
 
-namespace StratumClient.Extensions.Logging
+namespace Stratum.Extensions.Logging.Serilog
 {
-    internal class StratumClientSerilogLogger : StratumClient.ILogger
+    internal class StratumClientSerilogLogger : IStratumClientLogger
     {
-        private Serilog.ILogger _serilogLogger;
+        private ILogger _serilogLogger;
 
         private LogEventLevel _jsonMessageReceivedLogLevel;
 
         private LogEventLevel _jsonMessageSentLogLevel;
 
         public StratumClientSerilogLogger(
-            Serilog.ILogger serilogLogger,
-            Serilog.Events.LogEventLevel jsonMessageReceivedLogLevel = LogEventLevel.Verbose,
-            Serilog.Events.LogEventLevel jsonMessageSentLogLevel = LogEventLevel.Verbose)
+            ILogger serilogLogger,
+            LogEventLevel jsonMessageReceivedLogLevel = LogEventLevel.Verbose,
+            LogEventLevel jsonMessageSentLogLevel = LogEventLevel.Verbose)
         {
             if (serilogLogger == null)
             {

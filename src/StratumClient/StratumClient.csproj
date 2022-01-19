@@ -6,7 +6,7 @@
 
 	<PropertyGroup>
 		<PackageId>StratumClient</PackageId>
-		<Version>0.3.61-preview</Version>
+		<Version>1.3.61-preview</Version>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>Stratum;Stratum client;Mining pool;Bitcoin</PackageTags>
 		<Description>Stratum client for pooled crypto mining.
@@ -16,18 +16,24 @@ Currently supports Stratum Version 1</Description>
 		<RepositoryUrl>https://github.com/divinci/StratumClient</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<RootNamespace>Stratum</RootNamespace>
+		<AssemblyName>StratumClient</AssemblyName>
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Include="..\..\README.md" Pack="true" Visible="false" PackagePath=""/>
+	  <None Include="..\..\README.md" Pack="true" Visible="false" PackagePath="" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Include="..\..\LICENSE.txt" Pack="true" Visible="false" PackagePath=""/>
+	  <None Include="..\..\LICENSE.txt" Pack="true" Visible="false" PackagePath="" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Include="..\..\mining_icon.png" Pack="true" Visible="false" PackagePath=""/>
+	  <None Include="..\..\mining_icon.png" Pack="true" Visible="false" PackagePath="" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="StratumClient.Extensions.Logging.Serilog" />
 	</ItemGroup>
 
 	<ItemGroup>

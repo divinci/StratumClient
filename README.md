@@ -3,13 +3,13 @@
 ### A stratum v1 client for mining pool participation.
 
 #### Development Branch
-[![Build Status](https://dev.azure.com/nellisgowland/StratumClient/_apis/build/status/StratumClient/Publish%20PreRelease) ![Stratum-Client-DEV-NugetVersion](https://img.shields.io/nuget/vpre/StratumClient)
+![Build Status](https://dev.azure.com/nellisgowland/StratumClient/_apis/build/status/StratumClient/Publish%20PreRelease) ![Stratum-Client-DEV-NugetVersion](https://img.shields.io/nuget/vpre/StratumClient)
 #### Release
-[![Build Status](https://dev.azure.com/nellisgowland/StratumClient/_apis/build/status/StratumClient/Publish%20Release) ![Stratum-Client-RELEASE-NugetVersion](https://img.shields.io/nuget/v/StratumClient)
+![Build Status](https://dev.azure.com/nellisgowland/StratumClient/_apis/build/status/StratumClient/Publish%20Release) ![Stratum-Client-RELEASE-NugetVersion](https://img.shields.io/nuget/v/StratumClient)
 
 Example usage:
 ```CS
-var client = new StratumClient.V1.StratumClient();
+var client = new Stratum.V1.StratumClient();
 
 client.OnSubscribeResponse += (subscribeResponse, subscribeRequest) =>
 {

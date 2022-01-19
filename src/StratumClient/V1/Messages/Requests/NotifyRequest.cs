@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace StratumClient.V1.Messages.Requests
+namespace Stratum.V1.Messages.Requests
 {
     public class NotifyRequest : JsonRpcRequest
     {

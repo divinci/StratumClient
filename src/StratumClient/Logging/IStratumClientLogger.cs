@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace StratumClient
+namespace Stratum.Logging
 {
-    public interface ILogger
+    internal interface IStratumClientLogger
     {
         void Verbose(string message);
 
