@@ -4,7 +4,7 @@
 
 #### Development Branch
 ![Stratum-Client-DEV](https://dev.azure.com/nellisgowland/StratumClient/_apis/build/status/StratumClient_DEV) ![Stratum-Client-DEV-NugetVersion](https://img.shields.io/nuget/vpre/StratumClient)
-#### Release Branch
+#### Release
 ![Stratum-Client-RELEASE](https://dev.azure.com/nellisgowland/StratumClient/_apis/build/status/StratumClient-RELEASE) ![Stratum-Client-RELEASE-NugetVersion](https://img.shields.io/nuget/v/StratumClient)
 
 Example usage:
