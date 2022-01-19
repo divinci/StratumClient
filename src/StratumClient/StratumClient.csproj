@@ -6,27 +6,31 @@
 
 	<PropertyGroup>
 		<PackageId>StratumClient</PackageId>
-		<Version>0.0.1-preview05</Version>
+		<Version>0.0.1-preview06</Version>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>Stratum;Stratum client;Mining pool;Bitcoin</PackageTags>
-		<Description>Stratum client for pooled mining projects.
-Currently supports Stratum Version 1		</Description>
+		<Description>Stratum client for pooled crypto mining.
+Currently supports Stratum Version 1</Description>
 		<PackageProjectUrl>https://github.com/divinci/StratumClient</PackageProjectUrl>
 		<PackageIcon>mining_icon.png</PackageIcon>
 		<RepositoryUrl>https://github.com/divinci/StratumClient</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<PackageLicenseFile>C:\repos\divinci\StratumClient\LICENSE</PackageLicenseFile>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="README.md" Pack="true" PackagePath="\" />
+	  <None Include="..\..\README.md" Pack="true" Visible="false" PackagePath=""/>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\LICENSE.txt" Pack="true" Visible="false" PackagePath=""/>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\mining_icon.png" Pack="true" Visible="false" PackagePath=""/>
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<Page Include="README.md" />
 	</ItemGroup>
 </Project>
