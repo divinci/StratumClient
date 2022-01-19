@@ -2,11 +2,6 @@
 
 ### A stratum client for mining pool participation.
 
-#### Development Branch
-![Stratum-Client-DEV](https://dev.azure.com/nellisgowland/StratumClient/_apis/build/status/StratumClient-DEV?branchName=dev) ![Stratum-Client-DEV-NugetVersion](https://img.shields.io/nuget/vpre/StratumClient)
-#### Release Branch
-![Stratum-Client-RELEASE](https://dev.azure.com/nellisgowland/StratumClient/_apis/build/status/StratumClient-DEV?branchName=release) ![Stratum-Client-RELEASE-NugetVersion](https://img.shields.io/nuget/v/StratumClient)
-
 Example usage:
 ```CS
 var client = new StratumV1JsonRpcClient();
