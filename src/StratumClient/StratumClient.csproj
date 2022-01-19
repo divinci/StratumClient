@@ -2,17 +2,21 @@
 
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
-		<Version>0.0.1-preview05</Version>
 	</PropertyGroup>
 
 	<PropertyGroup>
+		<PackageId>StratumClient</PackageId>
+		<Version>0.0.1-preview05</Version>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<ApplicationIcon>mining_icon.png</ApplicationIcon>
+		<PackageTags>Stratum;Stratum client;Mining pool;Bitcoin</PackageTags>
+		<Description>Stratum client for pooled mining projects.
+Currently supports Stratum Version 1		</Description>
+		<PackageProjectUrl>https://github.com/divinci/StratumClient</PackageProjectUrl>
+		<PackageIcon>mining_icon.png</PackageIcon>
+		<RepositoryUrl>https://github.com/divinci/StratumClient</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageLicenseFile>C:\repos\divinci\StratumClient\LICENSE</PackageLicenseFile>
 	</PropertyGroup>
-
-	<ItemGroup>
-	  <Content Include="mining_icon.png" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<None Include="README.md" Pack="true" PackagePath="\" />
