@@ -6,7 +6,7 @@
 
 	<PropertyGroup>
 		<PackageId>StratumClient.Extensions.Logging.Serilog</PackageId>
-		<Version>0.0.1-preview04</Version>
+		<Version>0.0.50-preview</Version>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>Serilog;Stratum;Stratum client;Mining pool;Bitcoin</PackageTags>
 		<Description>Allow StratumClient to output to Serilog.</Description>
@@ -38,3 +38,4 @@
   </ItemGroup>
 
 </Project>
+
