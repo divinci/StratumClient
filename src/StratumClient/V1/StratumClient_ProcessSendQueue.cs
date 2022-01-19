@@ -8,7 +8,7 @@ using System.Threading;
 
 namespace StratumClient.V1
 {
-    public partial class StratumV1JsonRpcClient
+    public partial class StratumClient
     {
         private int _messageId = 0;
 

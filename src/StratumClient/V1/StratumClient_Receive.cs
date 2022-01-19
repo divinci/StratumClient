@@ -5,7 +5,7 @@ using System.Net.Sockets;
 
 namespace StratumClient.V1
 {
-    public partial class StratumV1JsonRpcClient
+    public partial class StratumClient
     {
         private byte[] _recieveBuffer = new byte[1024 * 4];
         private void _BeginRecieve()

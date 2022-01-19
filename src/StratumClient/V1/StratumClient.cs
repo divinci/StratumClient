@@ -4,9 +4,9 @@ using System.Net.Sockets;
 
 namespace StratumClient.V1
 {
-    public delegate void DOnConnect(StratumV1JsonRpcClient jsonRpcClient);
+    public delegate void DOnConnect(StratumClient jsonRpcClient);
 
-    public delegate void DOnDisconnect(StratumV1JsonRpcClient jsonRpcClient);
+    public delegate void DOnDisconnect(StratumClient jsonRpcClient);
 
     public delegate void DOnAuthorizeResponse(AuthorizeResponse authorizeResponse, AuthorizeRequest authorizeRequest);
 
@@ -18,7 +18,7 @@ namespace StratumClient.V1
 
     public delegate void DOnSetDifficultyRequest(SetDifficultyRequest setDifficultyRequest);
 
-    public partial class StratumV1JsonRpcClient
+    public partial class StratumClient
     {
         private ILogger _logger;
 
@@ -34,7 +34,7 @@ namespace StratumClient.V1
 
         public event DOnSetDifficultyRequest OnSetDifficultyRequest;
 
-        public StratumV1JsonRpcClient()
+        public StratumClient()
         {
         }
 
@@ -43,7 +43,7 @@ namespace StratumClient.V1
             _logger = logger;
         }
 
-        public StratumV1JsonRpcClient(ILogger logger)
+        public StratumClient(ILogger logger)
         {
             _logger = logger;
         }

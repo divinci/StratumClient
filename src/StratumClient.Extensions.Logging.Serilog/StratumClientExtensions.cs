@@ -4,8 +4,8 @@ namespace StratumClient.Extensions.Logging
 {
     public static class StratumClientExtensions
     {
-        public static V1.StratumV1JsonRpcClient UseSerilog(
-            this V1.StratumV1JsonRpcClient client,
+        public static V1.StratumClient UseSerilog(
+            this V1.StratumClient client,
             Serilog.ILogger logger,
             LogEventLevel jsonMessageReceivedLogLevel = LogEventLevel.Verbose,
             LogEventLevel jsonMessageSentLogLevel = LogEventLevel.Verbose)

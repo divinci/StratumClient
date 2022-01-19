@@ -1,10 +1,10 @@
 ﻿# Stratum Client
 
-### A stratum client for mining pool participation.
+### A stratum v1 client for mining pool participation.
 
 Example usage:
 ```CS
-var client = new StratumV1JsonRpcClient();
+var client = new StratumClient.V1.StratumClient();
 
 client.OnSubscribeResponse += (subscribeResponse, subscribeRequest) =>
 {

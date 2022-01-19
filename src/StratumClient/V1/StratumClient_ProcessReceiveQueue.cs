@@ -11,7 +11,7 @@ using System.Threading;
 
 namespace StratumClient.V1
 {
-    public partial class StratumV1JsonRpcClient
+    public partial class StratumClient
     {
         private readonly object _processReceiveLock = new object();
 

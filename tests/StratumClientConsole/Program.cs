@@ -1,15 +1,13 @@
 ﻿using Serilog;
 using StratumClient.Extensions.Logging;
-using StratumClient.V1;
 using StratumClient.V1.Messages.Requests;
 
-var client = new StratumV1JsonRpcClient()
+var client = new StratumClient.V1.StratumClient()
                 .UseSerilog(
                     new LoggerConfiguration()
                         .MinimumLevel.Information()
                         .WriteTo.Console()
                         .CreateLogger());
-
 
 await client.ConnectAsync(new Uri("tcp://eu.stratum.slushpool.com:3333"));
 

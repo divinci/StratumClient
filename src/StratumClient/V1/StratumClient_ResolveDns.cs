@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StratumClient.V1
 {
-    public partial class StratumV1JsonRpcClient
+    public partial class StratumClient
     {
         private IEnumerable<IPEndPoint> _iPEndPoints;
 
