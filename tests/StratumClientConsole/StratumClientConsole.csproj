@@ -9,11 +9,11 @@
 
   <ItemGroup>
     <PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
+    <PackageReference Include="Shouldly" Version="4.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\StratumClient.Extensions.Logging.Serilog\StratumClient.Extensions.Logging.Serilog.csproj" />
-    <ProjectReference Include="..\..\src\StratumClient\StratumClient.csproj" />
   </ItemGroup>
 
 </Project>
