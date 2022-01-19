@@ -6,7 +6,7 @@
 
 	<PropertyGroup>
 		<PackageId>StratumClient</PackageId>
-		<Version>0.1.58</Version>
+		<Version>0.2.58-preview</Version>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>Stratum;Stratum client;Mining pool;Bitcoin</PackageTags>
 		<Description>Stratum client for pooled crypto mining.
@@ -34,6 +34,7 @@ Currently supports Stratum Version 1</Description>
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	</ItemGroup>
 </Project>
+
 
 
 
