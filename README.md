@@ -3,9 +3,9 @@
 ### A stratum v1 client for mining pool participation.
 
 #### Development Branch
-![Stratum-Client-DEV](https://dev.azure.com/nellisgowland/StratumClient/_apis/build/status/StratumClient_DEV) ![Stratum-Client-DEV-NugetVersion](https://img.shields.io/nuget/vpre/StratumClient)
+[![Build Status](https://dev.azure.com/nellisgowland/StratumClient/_apis/build/status/StratumClient/Publish%20PreRelease) ![Stratum-Client-DEV-NugetVersion](https://img.shields.io/nuget/vpre/StratumClient)
 #### Release
-![Stratum-Client-RELEASE](https://dev.azure.com/nellisgowland/StratumClient/_apis/build/status/StratumClient-RELEASE) ![Stratum-Client-RELEASE-NugetVersion](https://img.shields.io/nuget/v/StratumClient)
+[![Build Status](https://dev.azure.com/nellisgowland/StratumClient/_apis/build/status/StratumClient/Publish%20Release) ![Stratum-Client-RELEASE-NugetVersion](https://img.shields.io/nuget/v/StratumClient)
 
 Example usage:
 ```CS
